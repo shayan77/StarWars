@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Actors View Controller-->
+        <scene sceneID="shU-qm-5x2">
+            <objects>
+                <viewController storyboardIdentifier="ActorsViewController" id="fiq-wR-B8N" customClass="ActorsViewController" customModule="StarWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ilj-57-CqI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B8B-0n-hzT">
+                                <rect key="frame" x="0.0" y="64" width="414" height="832"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="lz1-1S-FTr">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gkB-UO-QIX"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="B8B-0n-hzT" secondAttribute="bottom" id="7rP-Oi-v4M"/>
+                            <constraint firstItem="gkB-UO-QIX" firstAttribute="trailing" secondItem="B8B-0n-hzT" secondAttribute="trailing" id="CIP-Bb-wJa"/>
+                            <constraint firstItem="B8B-0n-hzT" firstAttribute="top" secondItem="gkB-UO-QIX" secondAttribute="top" constant="20" id="PPB-pU-BAo"/>
+                            <constraint firstItem="lz1-1S-FTr" firstAttribute="centerX" secondItem="Ilj-57-CqI" secondAttribute="centerX" id="TIX-yu-3Zg"/>
+                            <constraint firstItem="B8B-0n-hzT" firstAttribute="leading" secondItem="gkB-UO-QIX" secondAttribute="leading" id="hpY-zs-5tr"/>
+                            <constraint firstItem="lz1-1S-FTr" firstAttribute="centerY" secondItem="Ilj-57-CqI" secondAttribute="centerY" id="zN0-hj-xtt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actorsTableView" destination="B8B-0n-hzT" id="sf0-It-Wjx"/>
+                        <outlet property="loading" destination="lz1-1S-FTr" id="vfv-gZ-7ex"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIn-gp-FEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.014492753623188" y="85.714285714285708"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="Cjt-fg-77a">
+            <objects>
+                <viewController storyboardIdentifier="RateViewController" id="hxR-2N-0ty" customClass="RateViewController" customModule="StarWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jgl-ME-y3q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-M7-abu">
+                                <rect key="frame" x="20" y="814" width="374" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-e7-oUa">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="PPL-F4-VUh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Submit Rate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSi-VK-P9q" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="69.5" y="128" width="275" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IkS-vB-Uem"/>
+                                    <constraint firstAttribute="width" constant="275" id="oHX-BM-CO2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="ic-star-fill"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="ic-star-outline"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mid-bI-AHM"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SSi-VK-P9q" firstAttribute="centerX" secondItem="Jgl-ME-y3q" secondAttribute="centerX" id="0nN-kE-YpU"/>
+                            <constraint firstAttribute="bottom" secondItem="dbh-M7-abu" secondAttribute="bottom" constant="34" id="KEC-Em-24Q"/>
+                            <constraint firstItem="SSi-VK-P9q" firstAttribute="top" secondItem="Mid-bI-AHM" secondAttribute="top" constant="40" id="l16-R0-m4l"/>
+                            <constraint firstItem="Mid-bI-AHM" firstAttribute="trailing" secondItem="dbh-M7-abu" secondAttribute="trailing" constant="20" id="oLU-Fj-GPq"/>
+                            <constraint firstItem="dbh-M7-abu" firstAttribute="leading" secondItem="Mid-bI-AHM" secondAttribute="leading" constant="20" id="x0U-rb-r8E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="9OS-xI-yZm"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cosmosView" destination="SSi-VK-P9q" id="4il-Xa-vVv"/>
+                        <outlet property="navItem" destination="9OS-xI-yZm" id="cmz-58-zaS"/>
+                        <outlet property="submitRateBtn" destination="Vcg-e7-oUa" id="Bsy-o1-s3J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9Y-As-TgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-star-fill" width="37" height="37"/>
+        <image name="ic-star-outline" width="37" height="37"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

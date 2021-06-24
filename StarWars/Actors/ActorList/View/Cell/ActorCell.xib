@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="209" id="KGk-i7-Jjw" customClass="ActorCell" customModule="StarWars" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Npd-vF-eUt">
+                        <rect key="frame" x="20" y="0.0" width="280" height="197"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="celebrity" translatesAutoresizingMaskIntoConstraints="NO" id="KDA-Tx-CxH">
+                                <rect key="frame" x="16" y="16" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="9Ft-vg-ir1"/>
+                                    <constraint firstAttribute="width" constant="20" id="glI-1m-QWJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4nv-D3-U7f">
+                                <rect key="frame" x="44" y="8.5" width="95.5" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Aky-bE-tFv">
+                                <rect key="frame" x="16" y="56" width="248" height="20"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kv7-gM-6ZH">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gender-symbols" translatesAutoresizingMaskIntoConstraints="NO" id="fpW-8I-PiK">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="WzI-Cx-PSU"/>
+                                                    <constraint firstAttribute="width" constant="20" id="wum-gy-sNY"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="D6a-Rx-7LA">
+                                                <rect key="frame" x="28" y="0.0" width="92" height="20"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wlu-NT-2x3">
+                                        <rect key="frame" x="128" y="0.0" width="120" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birth" translatesAutoresizingMaskIntoConstraints="NO" id="CQF-rj-5lf">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="3OB-Uf-5YP"/>
+                                                    <constraint firstAttribute="width" constant="20" id="myG-Mr-1tD"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-O3-6vk">
+                                                <rect key="frame" x="28" y="0.0" width="92" height="20"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="udN-7P-6zx">
+                                <rect key="frame" x="16" y="88" width="248" height="20"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OFM-7p-UGw">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="height" translatesAutoresizingMaskIntoConstraints="NO" id="JaF-ek-q35">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="9kX-xF-jfw"/>
+                                                    <constraint firstAttribute="width" constant="20" id="ZBU-Ir-UNn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TGO-tk-qX3">
+                                                <rect key="frame" x="28" y="0.0" width="92" height="20"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aXt-Hh-gdZ">
+                                        <rect key="frame" x="128" y="0.0" width="120" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weight" translatesAutoresizingMaskIntoConstraints="NO" id="FXy-13-LcN">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="AMl-pd-l8R"/>
+                                                    <constraint firstAttribute="width" constant="20" id="bBH-V1-aYS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OnW-7v-Mat">
+                                                <rect key="frame" x="28" y="0.0" width="92" height="20"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wFi-oc-XTM">
+                                <rect key="frame" x="16" y="120" width="248" height="20"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9IF-WY-Mjn">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beauty-treatment" translatesAutoresizingMaskIntoConstraints="NO" id="182-7e-XJZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="CBn-wL-qXv"/>
+                                                    <constraint firstAttribute="width" constant="20" id="VkK-ml-PAO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ePT-5E-Pv6">
+                                                <rect key="frame" x="28" y="0.0" width="92" height="20"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9km-Co-Erv">
+                                        <rect key="frame" x="128" y="0.0" width="120" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="FON-0i-U4I">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="PKi-Xm-PFh"/>
+                                                    <constraint firstAttribute="width" constant="20" id="scH-YC-QUw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Fco-nb-7zS">
+                                                <rect key="frame" x="28" y="0.0" width="92" height="20"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="whU-Wr-Dmu">
+                                <rect key="frame" x="16" y="152" width="248" height="20"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uzb-wO-VhH">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-star-fill" translatesAutoresizingMaskIntoConstraints="NO" id="zZ4-ep-eql">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="8N0-Tz-i7n"/>
+                                                    <constraint firstAttribute="width" constant="20" id="h3r-gg-Eur"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cPW-3K-KZB">
+                                                <rect key="frame" x="28" y="0.0" width="220" height="20"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KDA-Tx-CxH" firstAttribute="top" secondItem="Npd-vF-eUt" secondAttribute="top" constant="16" id="9ht-up-Dyj"/>
+                            <constraint firstItem="udN-7P-6zx" firstAttribute="top" secondItem="Aky-bE-tFv" secondAttribute="bottom" constant="12" id="FZY-YB-EgQ"/>
+                            <constraint firstItem="4nv-D3-U7f" firstAttribute="leading" secondItem="KDA-Tx-CxH" secondAttribute="trailing" constant="8" id="G54-Ch-b6R"/>
+                            <constraint firstItem="KDA-Tx-CxH" firstAttribute="leading" secondItem="Npd-vF-eUt" secondAttribute="leading" constant="16" id="KOF-ZR-tFk"/>
+                            <constraint firstItem="Aky-bE-tFv" firstAttribute="leading" secondItem="Npd-vF-eUt" secondAttribute="leading" constant="16" id="LlF-7h-h4S"/>
+                            <constraint firstItem="whU-Wr-Dmu" firstAttribute="leading" secondItem="Npd-vF-eUt" secondAttribute="leading" constant="16" id="LxY-oo-Rim"/>
+                            <constraint firstAttribute="trailing" secondItem="whU-Wr-Dmu" secondAttribute="trailing" constant="16" id="N9B-Un-yKP"/>
+                            <constraint firstAttribute="trailing" secondItem="wFi-oc-XTM" secondAttribute="trailing" constant="16" id="OKu-U6-lgJ"/>
+                            <constraint firstItem="Aky-bE-tFv" firstAttribute="top" secondItem="4nv-D3-U7f" secondAttribute="bottom" constant="12" id="SbF-f5-UYI"/>
+                            <constraint firstAttribute="trailing" secondItem="udN-7P-6zx" secondAttribute="trailing" constant="16" id="Sml-7U-n9z"/>
+                            <constraint firstItem="wFi-oc-XTM" firstAttribute="leading" secondItem="Npd-vF-eUt" secondAttribute="leading" constant="16" id="XkA-Ss-uVM"/>
+                            <constraint firstItem="whU-Wr-Dmu" firstAttribute="top" secondItem="wFi-oc-XTM" secondAttribute="bottom" constant="12" id="fMD-0J-dhp"/>
+                            <constraint firstItem="udN-7P-6zx" firstAttribute="leading" secondItem="Npd-vF-eUt" secondAttribute="leading" constant="16" id="fz0-Rh-jPY"/>
+                            <constraint firstItem="wFi-oc-XTM" firstAttribute="top" secondItem="udN-7P-6zx" secondAttribute="bottom" constant="12" id="icV-AP-sHa"/>
+                            <constraint firstAttribute="trailing" secondItem="Aky-bE-tFv" secondAttribute="trailing" constant="16" id="sif-Ap-HJy"/>
+                            <constraint firstItem="4nv-D3-U7f" firstAttribute="centerY" secondItem="KDA-Tx-CxH" secondAttribute="centerY" id="z3n-Qu-MFN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Npd-vF-eUt" secondAttribute="bottom" constant="12" id="LXf-oT-hde"/>
+                    <constraint firstAttribute="trailing" secondItem="Npd-vF-eUt" secondAttribute="trailing" constant="20" id="M4x-bw-ky8"/>
+                    <constraint firstItem="Npd-vF-eUt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ZrT-J6-dms"/>
+                    <constraint firstItem="Npd-vF-eUt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kgY-3j-66E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="actorNameLbl" destination="4nv-D3-U7f" id="VEH-Cb-heq"/>
+                <outlet property="birthLbl" destination="5Qj-O3-6vk" id="xlW-EY-lil"/>
+                <outlet property="cellView" destination="Npd-vF-eUt" id="22X-6U-rlz"/>
+                <outlet property="hairLbl" destination="Fco-nb-7zS" id="9Qt-jG-3Fv"/>
+                <outlet property="heightLbl" destination="TGO-tk-qX3" id="NzJ-bP-T0D"/>
+                <outlet property="rateLbl" destination="cPW-3K-KZB" id="onA-gz-Peh"/>
+                <outlet property="sexLbl" destination="D6a-Rx-7LA" id="Xy7-L7-vh5"/>
+                <outlet property="skinLbl" destination="ePT-5E-Pv6" id="qhW-SV-Zld"/>
+                <outlet property="weightLbl" destination="OnW-7v-Mat" id="sbV-W5-q0c"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="124.21875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="beauty-treatment" width="512" height="512"/>
+        <image name="birth" width="512" height="512"/>
+        <image name="celebrity" width="512" height="512"/>
+        <image name="gender-symbols" width="512" height="512"/>
+        <image name="height" width="512" height="512"/>
+        <image name="ic-star-fill" width="37" height="37"/>
+        <image name="man" width="512" height="512"/>
+        <image name="weight" width="512" height="512"/>
+    </resources>
+</document>

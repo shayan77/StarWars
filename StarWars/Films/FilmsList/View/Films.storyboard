@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Films View Controller-->
+        <scene sceneID="QuE-YF-XXq">
+            <objects>
+                <viewController storyboardIdentifier="FilmsViewController" id="Mry-d1-bjZ" customClass="FilmsViewController" customModule="StarWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tym-O3-8Kb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Ih-Yf-a1C">
+                                <rect key="frame" x="0.0" y="64" width="414" height="832"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="uu0-Eh-ouN">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZU5-Ec-SiE"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZU5-Ec-SiE" firstAttribute="trailing" secondItem="4Ih-Yf-a1C" secondAttribute="trailing" id="4zG-Wj-whq"/>
+                            <constraint firstItem="uu0-Eh-ouN" firstAttribute="centerX" secondItem="Tym-O3-8Kb" secondAttribute="centerX" id="Jer-dI-Xgz"/>
+                            <constraint firstItem="4Ih-Yf-a1C" firstAttribute="leading" secondItem="ZU5-Ec-SiE" secondAttribute="leading" id="PAt-bh-xHQ"/>
+                            <constraint firstItem="uu0-Eh-ouN" firstAttribute="centerY" secondItem="Tym-O3-8Kb" secondAttribute="centerY" id="dMw-Jh-jsS"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ih-Yf-a1C" secondAttribute="bottom" id="p0U-Dh-tF0"/>
+                            <constraint firstItem="4Ih-Yf-a1C" firstAttribute="top" secondItem="ZU5-Ec-SiE" secondAttribute="top" constant="20" id="wZY-en-ETL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="filmsTableView" destination="4Ih-Yf-a1C" id="aTC-jt-cU7"/>
+                        <outlet property="loading" destination="uu0-Eh-ouN" id="XAN-Sr-fcf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k67-pI-kt8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.014492753623188" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
